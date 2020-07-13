@@ -42,7 +42,7 @@
                                     <a class="btn btn-warning btn-sm" href="{{ route('students.edit', ['student' => $studente->id]) }}">
                                         Modifica
                                     </a>
-                                    <form action="{{ route('students.destroy', ['student' => $studente->id]) }}" method="post">
+                                    <form class="d-inline" action="{{ route('students.destroy', ['student' => $studente->id]) }}" method="post">
                                         @method('DELETE')
                                         @csrf
                                         <input type="submit" class="btn btn-danger btn-sm" value="Elimina">
